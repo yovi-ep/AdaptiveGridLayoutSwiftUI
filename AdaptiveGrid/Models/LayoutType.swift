@@ -24,7 +24,7 @@ extension LayoutType {
                 GridItem(.flexible(), spacing: 2)
             ]
         case .adaptive:
-            return [GridItem(.adaptive(minimum: 50), spacing: 2)]
+            return [GridItem(.adaptive(minimum: 100), spacing: 2)]
         }
     }
 }

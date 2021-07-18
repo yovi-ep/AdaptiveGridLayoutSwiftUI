@@ -20,13 +20,21 @@ struct ContentView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     LazyVGrid(columns: layoutSelected.columns, spacing: 2) {
                         ForEach(items) { item in
-                            switch layoutSelected {
-                            case .single:
-                                SingleRow(item: item)
-                            default:
-                                Image(item.image)
-                                    .resizable()
-                                    .aspectRatio(1/1, contentMode: .fill)
+                            NavigationLink(
+                                destination: VStack {
+                                    Image(item.image)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                }) {
+                                
+                                switch layoutSelected {
+                                case .single:
+                                    SingleRow(item: item)
+                                default:
+                                    Image(item.image)
+                                        .resizable()
+                                        .aspectRatio(1/1, contentMode: .fill)
+                                }
                             }
                         }
                     }.animation(.default)
