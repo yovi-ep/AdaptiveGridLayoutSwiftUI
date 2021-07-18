@@ -10,7 +10,6 @@
 		97E6549926A3ECCA00E9CD3D /* AdaptiveGridApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E6549826A3ECCA00E9CD3D /* AdaptiveGridApp.swift */; };
 		97E6549B26A3ECCA00E9CD3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E6549A26A3ECCA00E9CD3D /* ContentView.swift */; };
 		97E6549D26A3ECCB00E9CD3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E6549C26A3ECCB00E9CD3D /* Assets.xcassets */; };
-		97E654A026A3ECCB00E9CD3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E6549F26A3ECCB00E9CD3D /* Preview Assets.xcassets */; };
 		97E654AB26A3ECCC00E9CD3D /* AdaptiveGridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E654AA26A3ECCC00E9CD3D /* AdaptiveGridTests.swift */; };
 		97E654B626A3ECCC00E9CD3D /* AdaptiveGridUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E654B526A3ECCC00E9CD3D /* AdaptiveGridUITests.swift */; };
 		97E654C426A3ECE800E9CD3D /* LayoutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E654C326A3ECE800E9CD3D /* LayoutType.swift */; };
@@ -41,7 +40,6 @@
 		97E6549826A3ECCA00E9CD3D /* AdaptiveGridApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveGridApp.swift; sourceTree = "<group>"; };
 		97E6549A26A3ECCA00E9CD3D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		97E6549C26A3ECCB00E9CD3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		97E6549F26A3ECCB00E9CD3D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		97E654A126A3ECCB00E9CD3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97E654A626A3ECCC00E9CD3D /* AdaptiveGridTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdaptiveGridTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E654AA26A3ECCC00E9CD3D /* AdaptiveGridTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveGridTests.swift; sourceTree = "<group>"; };
@@ -103,25 +101,12 @@
 		97E6549726A3ECCA00E9CD3D /* AdaptiveGrid */ = {
 			isa = PBXGroup;
 			children = (
-				97E654C726A3F08C00E9CD3D /* Rows */,
-				97E6549826A3ECCA00E9CD3D /* AdaptiveGridApp.swift */,
-				97E6549A26A3ECCA00E9CD3D /* ContentView.swift */,
-				97E6549C26A3ECCB00E9CD3D /* Assets.xcassets */,
-				97E654A126A3ECCB00E9CD3D /* Info.plist */,
-				97E6549E26A3ECCB00E9CD3D /* Preview Content */,
-				97E654C326A3ECE800E9CD3D /* LayoutType.swift */,
-				97E654C526A3ED1400E9CD3D /* ItemModel.swift */,
-				97E654CA26A3F82400E9CD3D /* TabView.swift */,
+				97E654CE26A4092800E9CD3D /* App */,
+				97E654CC26A4090500E9CD3D /* Models */,
+				97E654CD26A4091400E9CD3D /* UI */,
+				97E654CF26A409E500E9CD3D /* Resources */,
 			);
 			path = AdaptiveGrid;
-			sourceTree = "<group>";
-		};
-		97E6549E26A3ECCB00E9CD3D /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				97E6549F26A3ECCB00E9CD3D /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		97E654A926A3ECCC00E9CD3D /* AdaptiveGridTests */ = {
@@ -148,6 +133,42 @@
 				97E654C826A3F09A00E9CD3D /* SingleRow.swift */,
 			);
 			path = Rows;
+			sourceTree = "<group>";
+		};
+		97E654CC26A4090500E9CD3D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				97E654C326A3ECE800E9CD3D /* LayoutType.swift */,
+				97E654C526A3ED1400E9CD3D /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		97E654CD26A4091400E9CD3D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				97E654C726A3F08C00E9CD3D /* Rows */,
+				97E6549A26A3ECCA00E9CD3D /* ContentView.swift */,
+				97E654CA26A3F82400E9CD3D /* TabView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		97E654CE26A4092800E9CD3D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				97E6549826A3ECCA00E9CD3D /* AdaptiveGridApp.swift */,
+				97E654A126A3ECCB00E9CD3D /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		97E654CF26A409E500E9CD3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				97E6549C26A3ECCB00E9CD3D /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,7 +274,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97E654A026A3ECCB00E9CD3D /* Preview Assets.xcassets in Resources */,
 				97E6549D26A3ECCB00E9CD3D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,7 +465,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AdaptiveGrid/Preview Content\"";
 				DEVELOPMENT_TEAM = MCRHF646YX;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AdaptiveGrid/Info.plist;
+				INFOPLIST_FILE = AdaptiveGrid/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,7 +487,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AdaptiveGrid/Preview Content\"";
 				DEVELOPMENT_TEAM = MCRHF646YX;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AdaptiveGrid/Info.plist;
+				INFOPLIST_FILE = AdaptiveGrid/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
