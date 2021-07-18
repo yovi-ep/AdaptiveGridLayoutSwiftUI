@@ -13,6 +13,10 @@
 		97E654A026A3ECCB00E9CD3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E6549F26A3ECCB00E9CD3D /* Preview Assets.xcassets */; };
 		97E654AB26A3ECCC00E9CD3D /* AdaptiveGridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E654AA26A3ECCC00E9CD3D /* AdaptiveGridTests.swift */; };
 		97E654B626A3ECCC00E9CD3D /* AdaptiveGridUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E654B526A3ECCC00E9CD3D /* AdaptiveGridUITests.swift */; };
+		97E654C426A3ECE800E9CD3D /* LayoutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E654C326A3ECE800E9CD3D /* LayoutType.swift */; };
+		97E654C626A3ED1400E9CD3D /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E654C526A3ED1400E9CD3D /* ItemModel.swift */; };
+		97E654C926A3F09A00E9CD3D /* SingleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E654C826A3F09A00E9CD3D /* SingleRow.swift */; };
+		97E654CB26A3F82400E9CD3D /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E654CA26A3F82400E9CD3D /* TabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		97E654B126A3ECCC00E9CD3D /* AdaptiveGridUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdaptiveGridUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E654B526A3ECCC00E9CD3D /* AdaptiveGridUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveGridUITests.swift; sourceTree = "<group>"; };
 		97E654B726A3ECCC00E9CD3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97E654C326A3ECE800E9CD3D /* LayoutType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutType.swift; sourceTree = "<group>"; };
+		97E654C526A3ED1400E9CD3D /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		97E654C826A3F09A00E9CD3D /* SingleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRow.swift; sourceTree = "<group>"; };
+		97E654CA26A3F82400E9CD3D /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +103,15 @@
 		97E6549726A3ECCA00E9CD3D /* AdaptiveGrid */ = {
 			isa = PBXGroup;
 			children = (
+				97E654C726A3F08C00E9CD3D /* Rows */,
 				97E6549826A3ECCA00E9CD3D /* AdaptiveGridApp.swift */,
 				97E6549A26A3ECCA00E9CD3D /* ContentView.swift */,
 				97E6549C26A3ECCB00E9CD3D /* Assets.xcassets */,
 				97E654A126A3ECCB00E9CD3D /* Info.plist */,
 				97E6549E26A3ECCB00E9CD3D /* Preview Content */,
+				97E654C326A3ECE800E9CD3D /* LayoutType.swift */,
+				97E654C526A3ED1400E9CD3D /* ItemModel.swift */,
+				97E654CA26A3F82400E9CD3D /* TabView.swift */,
 			);
 			path = AdaptiveGrid;
 			sourceTree = "<group>";
@@ -128,6 +140,14 @@
 				97E654B726A3ECCC00E9CD3D /* Info.plist */,
 			);
 			path = AdaptiveGridUITests;
+			sourceTree = "<group>";
+		};
+		97E654C726A3F08C00E9CD3D /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				97E654C826A3F09A00E9CD3D /* SingleRow.swift */,
+			);
+			path = Rows;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +280,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				97E6549B26A3ECCA00E9CD3D /* ContentView.swift in Sources */,
+				97E654C426A3ECE800E9CD3D /* LayoutType.swift in Sources */,
+				97E654C626A3ED1400E9CD3D /* ItemModel.swift in Sources */,
 				97E6549926A3ECCA00E9CD3D /* AdaptiveGridApp.swift in Sources */,
+				97E654CB26A3F82400E9CD3D /* TabView.swift in Sources */,
+				97E654C926A3F09A00E9CD3D /* SingleRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

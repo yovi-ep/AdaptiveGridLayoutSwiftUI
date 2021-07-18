@@ -8,9 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    private let items = ItemModel.mock()
+    
+    @State private var layoutSelected = LayoutType.single
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack(spacing: 0) {
+                TabView(layoutSelected: $layoutSelected)
+                
+                ScrollView(.vertical, showsIndicators: false) {
+                    LazyVGrid(columns: layoutSelected.columns, spacing: 2) {
+                        ForEach(items) { item in
+                            switch layoutSelected {
+                            case .single:
+                                SingleRow(item: item)
+                            default:
+                                Image(item.image)
+                                    .resizable()
+                                    .aspectRatio(1/1, contentMode: .fill)
+                            }
+                        }
+                    }.animation(.default)
+                }
+            }
+            .navigationTitle("Adaptive Grid Layout")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 
